@@ -1,13 +1,26 @@
+body {
+  max-width: 1920px;
+  margin:auto;
+  background-image: url(https://html-templates.info/images/pages/140520040122.jpg);
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+
 #display {
   grid-column: 1/7;
   grid-row: 2/3;
-  margin: 5px 5px 5px 5px;
+  margin: auto;
   text-align: right;
-  border: 3px solid;
-  height: 3rem;
-  width: 29rem;
-  background-color: #f5f5f5;
+  border: 5px solid;
+  border-color: #294a9efa;
+  width: 30rem;
+  background-color: #9dd5e0;
   font-size: 3rem;
+  border-radius: 10px;
+  padding-right: 1rem;
+  outline: none;
 }
 
 h1 {
@@ -16,14 +29,34 @@ h1 {
   text-align: center;
 }
 
+#all {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 60px repeat(5, 1fr);
+  background-color: #1886a2;
+  width: 33rem;
+  height: 35rem;
+  border-radius: 10px;
+  box-shadow:
+  0 0 0 1px silver,
+  0 -20px 0 -10px #fd6f05,
+  20px 0 0 -10px #0041ff,
+  0 20px 0 -10px gold,
+  -20px 0 0 -10px #ff0066;
+}
+
 button {
-  margin: 5px 5px 5px 5px;
+  margin: 10px;
   height: 5rem;
   width: 5rem;
-  color: #3a1709;
-  background: #988e83;
+  color: #07f1df;
+  background: #045e7c;
   cursor: pointer;
   font-size: 3rem;
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 6px -3px 10px 3px #8df1b6;
+  outline: none;
 }
 
 #seven {
@@ -124,10 +157,3 @@ button {
   grid-row: 6/7;
 }
 
-#all {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 60px repeat(5, 1fr);
-  background-color: #575563;
-  width: 30rem;
-}
